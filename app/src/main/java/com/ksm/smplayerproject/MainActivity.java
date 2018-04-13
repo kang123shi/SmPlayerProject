@@ -1,4 +1,4 @@
-package com.ksm.smplayper;
+package com.ksm.smplayerproject;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

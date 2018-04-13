@@ -1,0 +1,27 @@
+ext{
+   android =[
+           compileSdkVersion: 26,
+           buildToolsVersion: "27.0.1",
+           minSdkVersion    : 15,
+           targetSdkVersion : 26,
+           versionCode      : 1,
+           versionName      : "1.0"
+   ]
+    dependencies=[
+            //basic
+            //network = retrofit +rxjava +glide
+            "retrofit"            : "com.squareup.retrofit2:retrofit:2.4.0",
+            "retrofit-converter"  : "com.squareup.retrofit2:converter-gson:2.4.0",
+            "retrofit-adapter"    : "com.squareup.retrofit2:adapter-rxjava:2.4.0",
+            "okhttp"              : "com.squareup.okhttp3:okhttp:3.10.0",
+            "okhttp-logging"      : "com.squareup.okhttp3:logging-interceptor:3.10.0",
+            "rxjava"              : "io.reactivex:rxjava:2.x.x",
+            "rxandroid"           : "io.reactivex:rxandroid:2.0.2",
+            "glide"               : "com.github.bumptech.glide:glide:3.7.0",
+            "picasso"             : "com.squareup.picasso:picasso:2.5.2",
+            "okhttputils"         : "com.zhy:okhttputils:2.6.2",
+            "base-rvadapter"      : "com.zhy:base-rvadapter:3.0.3",
+            //tool
+            "turbodex"            : "com.github.asLody:turbodex:1.1.0",
+    ]
+}

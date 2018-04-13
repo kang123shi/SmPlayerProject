@@ -1,4 +1,4 @@
-package com.ksm.smplayper;
+package com.ksm.smplayerproject;
 
 import org.junit.Test;
 
