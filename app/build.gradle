@@ -31,6 +31,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile rootProject.ext.dependencies["turbodex"]
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile rootProject.ext.dependencies["retrofit"]
+    compile rootProject.ext.dependencies["retrofit-converter"]
+    compile rootProject.ext.dependencies["retrofit-adapter"]
+    compile rootProject.ext.dependencies["rxjava"]
+    compile rootProject.ext.dependencies["rxandroid"]
+    compile rootProject.ext.dependencies["okhttputils"]
+    compile rootProject.ext.dependencies["okhttp"]
+    compile rootProject.ext.dependencies["okhttp-logging"]
+    compile rootProject.ext.dependencies["base-rvadapter"]
 }
 repositories {
     mavenCentral()
