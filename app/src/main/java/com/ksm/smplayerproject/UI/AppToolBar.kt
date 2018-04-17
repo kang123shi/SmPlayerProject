@@ -34,7 +34,9 @@ class AppToolBar : Toolbar {
         fun rightOnClickListener()
     }
     public var leftListener : LeftOnClickListener? =null
-
+    fun setLeftOnClickListener(leftOnClickListener: LeftOnClickListener){
+        this.leftListener = leftOnClickListener
+    }
     public var rightListener : RightOnClickListener? =null
     fun setRightOnClickListener(rightListener : RightOnClickListener){
         this.rightListener = rightListener
@@ -49,16 +51,14 @@ class AppToolBar : Toolbar {
             rightImg = mView?.findViewById(R.id.iv_rightImg) as ImageView
             mainTitlt = mView?.findViewById(R.id.tv_toolbar_title) as TextView
             mainTitlt!!.text = ""
-
             var params : LayoutParams = LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT,Gravity.CENTER_HORIZONTAL)
             addView(mView,params)
         }
         setContentInsetsRelative(0,0)
-        leftImg!!.setOnClickListener { leftListener!!.leftOnClickListener()}
-        leftText!!.setOnClickListener { leftListener!!.leftOnClickListener() }
-        rightImg!!.setOnClickListener { rightListener!!.rightOnClickListener() }
-        rightText!!.setOnClickListener { rightListener!!.rightOnClickListener() }
-
+        leftImg!!.setOnClickListener { leftListener?.leftOnClickListener()}
+        leftText!!.setOnClickListener { leftListener?.leftOnClickListener() }
+        rightImg!!.setOnClickListener { rightListener?.rightOnClickListener() }
+        rightText!!.setOnClickListener { rightListener?.rightOnClickListener() }
     }
     fun setToolTilte(title:String){
         mainTitlt!!.visibility = View.VISIBLE

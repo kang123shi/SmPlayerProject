@@ -23,5 +23,8 @@ ext{
             "base-rvadapter"      : "com.zhy:base-rvadapter:3.0.3",
             //tool
             "turbodex"            : "com.github.asLody:turbodex:1.1.0",
+            "fastjson"            : "com.alibaba:fastjson:1.2.31",
+            "rxpermission"        : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
+            "butterknife"         : "com.jakewharton:butterknife:8.8.1",
     ]
 }

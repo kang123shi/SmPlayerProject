@@ -9,8 +9,7 @@
 <com.ksm.smplayerproject.UI.AppToolBar
     android:id="@+id/tool_maintool"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     >
-
 </com.ksm.smplayerproject.UI.AppToolBar>
 </LinearLayout>
